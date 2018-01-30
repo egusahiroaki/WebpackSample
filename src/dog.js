@@ -1,8 +1,9 @@
-var Dog = function Dog(){
-}
+export class Dog {
+  constructor() {
+    console.log('dog initialize');
+  }
 
-Dog.echo = function(){
-  console.log('wanwan');
+  echo() {
+    console.log('wanwan');
+  }
 }
-
-module.exports = Dog;
