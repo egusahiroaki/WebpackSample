@@ -1,9 +1,11 @@
 export class Dog {
+
   constructor() {
     console.log('dog initialize');
+    this.name = '';
   }
 
-  echo() {
-    console.log('wanwan');
+  echoMyName() {
+    console.log(this.name);
   }
 }

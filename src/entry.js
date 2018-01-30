@@ -1,4 +1,8 @@
 import { Dog } from './dog.js';
+import { Keeper } from './keeper.js';
+
+var keeper = new Keeper();
 var dog = new Dog();
-dog.echo();
-console.log('entry.json');
+keeper.hasDog();
+keeper.startToHaveDog(dog);
+keeper.hasDog();
