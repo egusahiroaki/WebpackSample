@@ -5,7 +5,8 @@ module.exports = {
   entry: './entry.js',
   output: { // dist以下にbundle.jsを出力
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/dist'
   },
   module: {
     rules: [{
@@ -22,7 +23,7 @@ module.exports = {
     }]
   },
   devServer: {
-    contentBase: path.resolve(__dirname, 'dist'),
+    // contentBase: path.resolve(__dirname, 'dist'),
     watchContentBase: true,
     port: 8080,
   },
