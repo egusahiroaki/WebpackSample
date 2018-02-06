@@ -1,4 +1,6 @@
 var path = require('path');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
@@ -8,6 +10,9 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/dist'
   },
+  plugins: [
+    new UglifyJsPlugin({uglifyOptions: {ecma: 6}})
+  ],
   module: {
     rules: [{
       test: /\.js$/,
