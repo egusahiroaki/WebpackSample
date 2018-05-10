@@ -1,8 +1,27 @@
-import { Dog } from './dog.js';
-import { Keeper } from './keeper.js';
+import StackTrace from 'stacktrace-js';
 
-var keeper = new Keeper();
-var dog = new Dog();
-keeper.hasDog();
-keeper.startToHaveDog(dog);
-keeper.hasDog();
+// window.onerror = (msg, file, line, col, error) => {
+//   StackTrace
+//   .fromError(error)
+//   .then((stackframes) => {
+//     const query = {
+//       stack: JSON.stringify(stackframes),
+//       date: new Date(),
+//     };
+//     console.log('query');
+//     return console.log(query);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
+
+//   return true;
+// };
+
+const main = () => {
+  hogw;
+  console.log("hogehoge");
+}
+
+main();
+
